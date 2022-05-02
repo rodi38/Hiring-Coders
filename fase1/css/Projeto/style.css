@@ -1,0 +1,165 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /*color: #a09038;*/
+    color: #f1f1f1;
+    font-family: 'Roboto', sans-serif;
+}
+
+ul {
+    list-style: none;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 400;
+}
+
+a{
+    text-decoration: none;
+}
+body{
+    background: url(./imagens/elvis-bekmanis-g9qwoPiS0nY-unsplash.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 45px;
+}
+#logo{
+    
+    font-size: 50px;
+    font-weight: 500;
+    border: 1px solid black;
+    border-radius: 10px;
+    color: rgb(175, 9, 23);
+    background: linear-gradient(90deg, #040113 0%, #02021d 35%, #2d0c8a 100%);
+    box-shadow: 2px 2px 3px 1px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+
+}
+#logo span {
+    color: #00ffff;
+}
+
+header ul {
+    display: flex;
+    
+}
+
+header ul li {
+    padding: 6px;
+    font-size: 40px;
+}
+header ul li a i {
+    transition: 300ms;
+    box-shadow: 2px 2px 3px 1px rgba(0, 0, 0, 0.2);
+}
+header ul li a i:hover{
+    color: #f10404;
+    
+}
+
+.container{
+    text-align: center;
+}
+
+.container .name h1{
+    font-size: 60px;
+    
+}
+
+.container .name h5{
+    font-size: 25px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#arrow i{
+    color: #e4eeee;
+    font-size: 35px;
+    cursor: pointer;
+    animation: blink 1s steps(5, start) infinite;
+}
+
+@keyframes blink {
+    to {
+        visibility: hidden;
+    }
+}
+
+#animation {
+    transition: 300ms;
+}
+
+.rotate {
+    transform: rotate(180deg);
+    transition: 300ms;
+}
+.active {
+    display: block !important;
+}
+#about p{
+    font-weight: 500;
+    max-width: 600px; 
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+
+
+.form{
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 35px;
+   
+}
+
+.form input{
+    width: 50%;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+    color: #02021d;
+    margin-top: 15px;
+}
+
+.form button{
+    width: 15%;
+    padding: 5px 10px;
+    background: linear-gradient(to right, #fc0a0a 50%, #000000a6 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    color: #ffffff;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    border-radius: 0px 5px 5px 0px;
+    margin-left: -5px;
+    transition: all 300ms ease-out;
+}
+
+.form button:hover {
+    background-position: left bottom;
+}
+
+@media only screen and (max-width: 768px){
+    .form {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    .container .name h1{
+        font-size: 30px;
+    }
+    .container .name h5{
+        font-size: 15px;
+    }
+    #about p{
+        max-width: 80%;
+        text-align: justify;
+    }
+}
